@@ -3,6 +3,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
 import SignIn from "./pages/Login";
 import UpdatePassword from "./pages/UpdatePassword";
+import SignUp from "./pages/Signup";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/login" element={<SignIn />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/update-password" element={<UpdatePassword />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </div>
     </Router>

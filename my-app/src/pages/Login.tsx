@@ -8,7 +8,7 @@ function Login() {
   const [message, setMessage] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  const handleSignIn = async (e) => {
+  const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setMessage(null);
 
@@ -41,7 +41,7 @@ function Login() {
           <p className="text-sm mt-12 text-slate-500">
             Don't have an account{" "}
             <a
-              href="javascript:void(0);"
+              href="/signup"
               className="text-blue-600 font-medium hover:underline ml-1"
             >
               Register here
