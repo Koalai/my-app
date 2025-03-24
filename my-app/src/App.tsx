@@ -2,6 +2,7 @@ import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
 import SignIn from "./pages/Login";
+import UpdatePassword from "./pages/UpdatePassword";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<SignIn />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/update-password" element={<UpdatePassword />} />
         </Routes>
       </div>
     </Router>
