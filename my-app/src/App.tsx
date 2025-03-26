@@ -4,7 +4,7 @@ import LandingPage_Agency from "./pages/LandingPage_Agency";
 import SignIn from "./pages/Login";
 import SignUp from "./pages/Signup";
 import UpdatePassword from "./pages/UpdatePassword";
-import { LandingPage_RealEstate } from "./pages/LandingPage_Software";
+import { LandingPage_RealEstate } from "./pages/LandingPage_RealEstate";
 
 function App() {
   return (
