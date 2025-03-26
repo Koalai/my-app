@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="flex items-center justify-between px-[250px] py-[30px] bg-[#F9F9F9] absolute bottom-0 w-full ">
+    <div className="flex items-center justify-between px-[250px] py-[30px] bg-[#F9F9F9]  w-full ">
       <p>Copyright © 2024. JustHome</p>
       <img
         src="/logo_real_estate_dark.svg"
