@@ -4,7 +4,7 @@ import LandingPage_Agency from "./pages/LandingPage_Agency";
 import SignIn from "./pages/Login";
 import SignUp from "./pages/Signup";
 import UpdatePassword from "./pages/UpdatePassword";
-import { LandingPage_Software } from "./pages/LandingPage_Software";
+import { LandingPage_RealEstate } from "./pages/LandingPage_Software";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <Routes>
         <Route path="/landing_page_agency" element={<LandingPage_Agency />} />
         <Route
-          path="/landing_page_software"
-          element={<LandingPage_Software />}
+          path="/landing_page_real_estate"
+          element={<LandingPage_RealEstate />}
         />
         <Route path="/login" element={<SignIn />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
