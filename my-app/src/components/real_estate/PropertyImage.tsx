@@ -1,12 +1,32 @@
-type PropertyImageProps = {
-  data: {
-    src: string;
-    property: string;
-    city: string;
-  }[];
-};
+const data = [
+  {
+    src: "/real_estate/property_s1.png",
+    city: "New York",
+    property: "8 Properties",
+  },
+  {
+    src: "/real_estate/property_s2.png",
+    city: "Chicagp",
+    property: "2 Properties",
+  },
+  {
+    src: "/real_estate/property_s3.png",
+    city: "Los Angeles",
+    property: "3 Properties",
+  },
+  {
+    src: "/real_estate/property_s4.png",
+    city: "Miami",
+    property: "2 Properties",
+  },
+  {
+    src: "/real_estate/property_s5.png",
+    city: "Florida",
+    property: "3 Properties",
+  },
+];
 
-export const PropertyImage = ({ data }: PropertyImageProps) => {
+export const PropertyImage = () => {
   return (
     <div className="flex ">
       {data.map((item) => (

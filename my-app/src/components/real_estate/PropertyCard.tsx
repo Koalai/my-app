@@ -1,13 +1,25 @@
-type PropertyCardProps = {
-  data: {
-    src: string;
-    name: string;
-    price: string;
-    address: string;
-  }[];
-};
+const data = [
+  {
+    src: "/real_estate/house_s1.png",
+    price: "$280,000",
+    name: "Skyper Pool Apartment",
+    address: "1020 Bloomingdale Ave",
+  },
+  {
+    src: "/real_estate/house_s2.png",
+    price: "$386,000",
+    name: "North Dillard Street",
+    address: "4330 Bell Shoals Rd",
+  },
+  {
+    src: "/real_estate/house_s3.png",
+    price: "$180,000",
+    name: "Eaton Garth Penthouse",
+    address: "7722 18th Ave, Brooklyn",
+  },
+];
 
-export const PropertyCard = ({ data }: PropertyCardProps) => {
+export const PropertyCard = () => {
   return (
     <>
       {data.map((item) => (
