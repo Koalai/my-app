@@ -6,7 +6,7 @@ const data = [
   },
   {
     src: "/real_estate/property_s2.png",
-    city: "Chicagp",
+    city: "Chicago",
     property: "2 Properties",
   },
   {
@@ -28,16 +28,16 @@ const data = [
 
 export const PropertyImage = () => {
   return (
-    <div className="flex ">
+    <div className="grid grid-cols-5 gap-4 px-4 mt-4">
       {data.map((item) => (
-        <div key={item.src} className="ml-[40px] mt-[40px] relative">
+        <div key={item.src} className="relative">
           <img
             src={item.src}
             alt={item.city}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 " />
-          <div className="absolute top-10 left-10 text-white z-10">
+          <div className="absolute top-5 left-5 text-white z-10">
             <p className="text-base font-semibold">{item.city}</p>
             <p className="text-xs">{item.property}</p>
           </div>
