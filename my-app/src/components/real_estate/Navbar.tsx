@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center px-[60px] py-[48px] ">
+    <div className="flex justify-between items-center px-10 py-6 ">
       <img src="/logo_real_estate.svg" alt="logo" />
       <ul className="flex text-white gap-[40px] text-sm ml-[180px]">
         <li>Home</li>
