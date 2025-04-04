@@ -1,5 +1,28 @@
-export const Banner = () => {
-  return (
+export const Banner = ({
+  isVertical = true,
+  img,
+  description,
+  name,
+  fill,
+}: {
+  isVertical?: boolean;
+  name?: string;
+  description?: string;
+  img?: string;
+  fill?: string;
+}) => {
+  return isVertical ? (
+    <div className={`px-8 pb-[56px] bg-[${fill}] rounded-lg`}>
+      <img src={img} alt="product sample" className="w-[260px] h-[260px]" />
+      <div className=" flex flex-col gap-4 items-start px-6">
+        <p className="text-2xl">{name}</p>
+        <p className="text-[#909090] text-sm">{description}</p>
+        <button className=" px-[56px] py-4 rounded-md border-[1px] border-black text-sm font-medium">
+          Shop now
+        </button>
+      </div>
+    </div>
+  ) : (
     <div className="bg-[#211C24] px-40 flex">
       <div className="flex flex-col gap-6 flex-1 justify-center items-start">
         <div>
@@ -18,7 +41,7 @@ export const Banner = () => {
         </button>
       </div>
       <img
-        src="/ecommerce/product_sample.png"
+        src="/ecommerce/product_banner.png"
         alt="product sample"
         className="w-[400px] h-[600px]"
       />
