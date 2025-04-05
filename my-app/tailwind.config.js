@@ -9,7 +9,8 @@ export default {
       backgroundImage: {
         'hero-bg': "url('/header_bg.png')",
         "hero-bg-2": "url('/header_bg_2.png')",
-        "banner-bg": "url('/product_banner_2.png')"
+        "banner-bg": "url('/product_banner_2.png')",
+        "banner-ecommere-bg": "url('/header_bg_ecommerce.png')"
       },
     },
   },
