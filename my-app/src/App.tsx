@@ -7,6 +7,7 @@ import UpdatePassword from "./pages/UpdatePassword";
 import { LandingPage_RealEstate } from "./pages/LandingPage_RealEstate";
 import { LandingPage_RealEstate_2 } from "./pages/LandingPage_RealEstate_2";
 import { LandingPage_Ecommerce } from "./pages/LandingPage_Ecommerce";
+import { LandingPage_Ecommerce_2 } from "./pages/LandingPage_Ecommerce_2";
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
         <Route
           path="/landing_page_ecommerce"
           element={<LandingPage_Ecommerce />}
+        />
+        <Route
+          path="/landing_page_ecommerce_2"
+          element={<LandingPage_Ecommerce_2 />}
         />
         <Route path="/login" element={<SignIn />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
