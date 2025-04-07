@@ -45,7 +45,7 @@ export const Header = () => {
       </div>
       <div className="bg-banner-real-estate3 bg-opacity-70 flex-1 bg-no-repeat w-[730px] relative">
         <div className="flex gap-10 ml-auto mr-20 font-medium text-lg text-white pl-8 pt-4">
-          <a href="">About</a>
+          <a href="#about">About</a>
           <a href="">Services</a>
           <a href="">Our work</a>
           <a href="">FAQs</a>
