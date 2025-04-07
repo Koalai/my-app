@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +67,9 @@ export const Header = () => {
         />
       </div>
       <div className="flex gap-3">
-        <img src="/ecommerce/cart.svg" alt="shopping cart" width={24} />
+        <Link to="/landing_page_ecommerce_2/cart">
+          <img src="/ecommerce/cart.svg" alt="shopping cart" width={24} />
+        </Link>
         <img src="/ecommerce/user.svg" alt="profile" width={24} />
       </div>
     </div>
