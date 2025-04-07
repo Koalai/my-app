@@ -7,7 +7,7 @@ import { Navigation } from "../components/agency/Navigation";
 import { Team } from "../components/agency/Team";
 import { Testimonials } from "../components/agency/Testimonials";
 
-export default function LandingPage_Agency() {
+export default function Agency() {
   return (
     <div>
       <Navigation />

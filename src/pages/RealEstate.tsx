@@ -1,25 +1,25 @@
+import { About } from "../components/real_estate/About";
 import { Brands } from "../components/real_estate/Brands";
+import { Contact } from "../components/real_estate/Contact";
 import { Features } from "../components/real_estate/Features";
 import { Footer } from "../components/real_estate/Footer";
+import { Hero } from "../components/real_estate/Hero";
 import { PropertiesList } from "../components/real_estate/PropertiesList";
+import Team from "../components/real_estate/Team";
 import { Testimonial } from "../components/real_estate/Testimonial";
-import { About } from "../components/real_estate_2/About";
-import { ArticleNews } from "../components/real_estate_2/ArticlesList";
-import { Hero } from "../components/real_estate_2/Hero";
-import { Why } from "../components/real_estate_2/Why";
 
-export const LandingPage_RealEstate_2 = () => {
+export const RealEstate = () => {
   return (
-    <>
+    <div>
       <Hero />
-      <PropertiesList />
       <Features />
-      <Why />
       <About />
-      <Testimonial />
+      <PropertiesList />
       <Brands />
-      <ArticleNews />
+      <Testimonial />
+      <Team />
+      <Contact />
       <Footer />
-    </>
+    </div>
   );
 };

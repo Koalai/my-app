@@ -7,7 +7,7 @@ import { BannersList } from "../components/ecommerce/BannersList";
 import { Discount } from "../components/ecommerce/Discount";
 import { Banner2 } from "../components/ecommerce/Banner2";
 
-export const LandingPage_Ecommerce = () => {
+export const Ecommerce = () => {
   return (
     <>
       <Header />
