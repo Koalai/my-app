@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <div className="bg-[#101014] py-6 pl-48 flex gap-20 pr-8 h-screen">
+    <div className="bg-[#101014] py-6 pl-48 flex gap-20 pr-8">
       <div className=" pt-4 flex-1">
         <img
           src="/real_estate_3/logo.svg"
@@ -8,7 +8,7 @@ export const Header = () => {
           className="w-auto h-[21px]"
         />
         <div className=" mt-[100px]">
-          <div className="rounded-2xl w-1/4 flex bg-white bg-opacity-10 px-2 py-1 items-center gap-2">
+          <div className="rounded-2xl w-[150px] flex bg-white bg-opacity-10 px-2 py-1 items-center gap-2">
             <div className="relative w-3 h-3">
               <div className="absolute inset-0 bg-white rounded-full" />
               <div className="absolute inset-0 bg-white rounded-full animate-pulse-dot opacity-50" />
@@ -43,7 +43,7 @@ export const Header = () => {
           </button>
         </div>
       </div>
-      <div className="bg-banner-real-estate3 bg-opacity-70 flex-1 bg-no-repeat w-[730px] relative">
+      <div className="bg-banner-real-estate3 bg-opacity-70 flex-1 bg-no-repeat min-w-[621px] min-h-[740px] relative bg-cover">
         <div className="flex gap-10 ml-auto mr-20 font-medium text-lg text-white pl-8 pt-4">
           <a href="#about">About</a>
           <a href="">Services</a>
