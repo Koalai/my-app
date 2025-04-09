@@ -7,13 +7,11 @@ export const Gallery = () => {
   const [tradespeople, setTradespeople] = useState(0);
   const [satisfaction, setSatisfaction] = useState(0);
 
-  // Dữ liệu mục tiêu
-  const targetExperience = 10; // Ví dụ: 10 năm kinh nghiệm
-  const targetProjects = 250; // 250 dự án
-  const targetTradespeople = 30; // 30 thợ lành nghề
-  const targetSatisfaction = 100; // 100% hài lòng
+  const targetExperience = 10;
+  const targetProjects = 250;
+  const targetTradespeople = 30;
+  const targetSatisfaction = 100;
 
-  // Hàm chạy animation cho một số
   const animateCount = (
     setValue: React.Dispatch<React.SetStateAction<number>>,
     target: number,
@@ -27,7 +25,7 @@ export const Gallery = () => {
       setValue(start);
       if (start >= target) {
         clearInterval(timer);
-        setValue(target); // Đảm bảo đạt chính xác giá trị mục tiêu
+        setValue(target);
       }
     }, stepTime);
   };

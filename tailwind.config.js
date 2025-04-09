@@ -12,6 +12,7 @@ export default {
         "banner-bg": "url('/product_banner_2.png')",
         "banner-ecommere-bg": "url('/header_bg_ecommerce.png')",
         "banner-real-estate3": "url('/real_estate_3/bg_banner.png')",
+        "banner-real-estate4": "url('/real_estate_4/bg_banner.png')",
       },
       animation: {
         scroll: 'scroll 25s linear infinite',
