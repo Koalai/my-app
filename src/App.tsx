@@ -11,6 +11,8 @@ import { Ecommerce_2 } from "./pages/Ecommerce_2";
 import { Ecommerce_2_Cart } from "./pages/Ecommerce_2_Cart";
 import { RealEstate_3 } from "./pages/RealEstate_3";
 import { RealEstate_4 } from "./pages/RealEstate_4";
+import { Home } from "./pages/Home";
+import { Real_Estate_5 } from "./pages/Real_Estate_5";
 
 function App() {
   return (
@@ -21,12 +23,14 @@ function App() {
         <Route path="/landing_page_real_estate_2" element={<RealEstate_2 />} />
         <Route path="/landing_page_real_estate_3" element={<RealEstate_3 />} />
         <Route path="/landing_page_real_estate_4" element={<RealEstate_4 />} />
+        <Route path="/landing_page_real_estate_5" element={<Real_Estate_5 />} />
         <Route path="/landing_page_ecommerce" element={<Ecommerce />} />
         <Route path="/landing_page_ecommerce_2" element={<Ecommerce_2 />} />
         <Route
           path="/landing_page_ecommerce_2/cart"
           element={<Ecommerce_2_Cart />}
         />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<SignIn />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/update-password" element={<UpdatePassword />} />
