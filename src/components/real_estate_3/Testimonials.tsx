@@ -32,10 +32,9 @@ const data = [
     img: "real_estate_3/avatar5.png",
   },
 ];
+const infiniteData = [...data, ...data];
 
 export const Testimonials = () => {
-  const infiniteData = [...data, ...data];
-
   return (
     <div className="mt-[150px] flex flex-col gap-[60px] pb-[40px]">
       <div className="max-w-[1360px] px-8 mx-auto text-center">
