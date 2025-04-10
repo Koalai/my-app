@@ -8,7 +8,7 @@ const logos = [
 
 export const Brands = () => {
   return (
-    <div className="px-[60px] py-11 flex  bg-black max-w-screen-2xl overflow-x-auto justify-center gap-8">
+    <div className="px-[60px] py-11 flex  bg-black overflow-x-auto justify-center gap-8 w-full">
       {logos.map((logo, index) => (
         <img
           key={index}

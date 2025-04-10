@@ -52,7 +52,7 @@ export const Banner = () => {
                     className="w-full h-full rounded-full object-cover border-4 border-white"
                   />
                 </div>
-                <div className="relativew-[32px] h-[32px]  z-20">
+                <div className="relativew-[32px] h-[32px] z-20">
                   <img
                     src="/real_estate_3/avatar1.png"
                     alt="Person 3"
