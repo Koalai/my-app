@@ -6,7 +6,7 @@ const imgs = [
 ];
 export const Hero = () => {
   return (
-    <div className="pt-[60px] ">
+    <div className="pt-[60px]" id="hero">
       <div className="max-w-[1370px] mx-auto flex gap-3 min-h-[700px]">
         <div className="flex flex-col gap-[30px] w-1/2 flex-1">
           <p className="text-[70px] font-semibold leading-tight">

@@ -44,19 +44,62 @@ const data = [
 ];
 export const Home = () => {
   return (
-    <div className="py-20 px-20 grid grid-cols-4 gap-8">
-      {data.map((items, index) => (
-        <Link to={items.navigate} key={index}>
-          <div className="rounded-lg bg-gray-100 border-[1px] p-4">
-            <img
-              src={items.img}
-              className="h-[350px] rounded-md object-contain"
-              alt="project picture"
-            />
-            <p className="text-2xl font-medium mt-4">{items.text}</p>
+    <div className="relative h-full ">
+      <div className="w-full flex justify-between fixed p-6 items-center left-0 top-0 bg-white">
+        <img src="logo_real_estate_dark.svg" alt="logo" />
+        <div className="flex gap-8 text-xl">
+          <a href="">Home</a>
+          <a href="">Demo</a>
+          <a href="">Contact</a>
+        </div>
+        <button className="py-4 px-10 rounded-[32px] bg-[#425CEC] text-white text-sm font-medium">
+          BUY NOW
+        </button>
+      </div>
+      <div className="pt-[300px] ">
+        <div className="flex gap-6 max-w-[1370px] mx-auto ">
+          <div className="flex flex-col w-1/2 items-start justify-between">
+            <div className="flex flex-col gap-6">
+              <p className="text-[40px] font-bold">
+                Highly flexible and reliable Website theme
+              </p>
+              <p className="text-lg text-[#666B80] w-3/4">
+                Create a fully functioning website with JustHome, one of the
+                most crafted and customizable theme on the market
+              </p>
+            </div>
+            <button className="py-4 px-10 rounded-[32px] bg-[#425CEC] text-white text-sm font-medium">
+              SEE THE DEMOS
+            </button>
           </div>
-        </Link>
-      ))}
+          <img
+            src="/real_estate_4/property_4.png"
+            alt="banner"
+            className="w-1/2 rounded-xl"
+          />
+        </div>
+      </div>
+      <div className="pt-[250px]">
+        <div className="max-w-[1440px] flex flex-col gap-6 mx-auto items-center">
+          <p className="text-[#0C73E1] text-[30px] font-bold">
+            {data.length} Pre-made Demo Websites
+          </p>
+          <div className="grid grid-cols-3 gap-8">
+            {data.map((items, index) => (
+              <Link to={items.navigate} key={index}>
+                <div className="rounded-lg bg-gray-100 border-[1px] p-4">
+                  <img
+                    src={items.img}
+                    className="h-[300px] rounded-md object-contain"
+                    alt="project picture"
+                  />
+                  <p className="text-2xl font-medium mt-4">{items.text}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
