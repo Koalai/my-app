@@ -27,6 +27,11 @@ const data = [
     navigate: "/landing_page_real_estate_4",
   },
   {
+    img: "/pages/real_estate_5.png",
+    text: "Real estate 5 Template",
+    navigate: "/landing_page_real_estate_5",
+  },
+  {
     img: "/pages/ecommerce.png",
     text: "Ecommerce Template",
     navigate: "/landing_page_ecommerce",
@@ -45,7 +50,7 @@ export const Home = () => {
           <div className="rounded-lg bg-gray-100 border-[1px] p-4">
             <img
               src={items.img}
-              className="h-[350px] rounded-md"
+              className="h-[350px] rounded-md object-contain"
               alt="project picture"
             />
             <p className="text-2xl font-medium mt-4">{items.text}</p>
