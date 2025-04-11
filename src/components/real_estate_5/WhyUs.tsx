@@ -1,6 +1,6 @@
 export const WhyUs = () => {
   return (
-    <div className="pt-[130px] px-5">
+    <div className="pt-[130px] px-5" id="why-us">
       <div
         className="max-w-[1370px] mx-auto bg-center bg-cover bg-no-repeat rounded-[32px] h-[700px] relative"
         style={{ backgroundImage: `url('/real_estate_5/whyUs.png')` }}

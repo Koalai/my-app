@@ -1,14 +1,28 @@
+import { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+
 export const Navbar = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.slice(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <div className="max-w-[1370px] mx-auto ">
       <div className="py-10 px-5 flex gap-5 justify-between items-center">
         <img src="/real_estate_5/Logo.png" alt="logo" className="h-9" />
         <div className="flex gap-8 text-[20px] items-center">
-          <a href="">Home</a>
-          <a href="">Services</a>
-          <a href="">Why us</a>
-          <a href="">Pricing</a>
-          <a href="">Blog</a>
+          <Link to="/landing_page_real_estate_5#hero">Home</Link>
+          <Link to="/landing_page_real_estate_5#services">Services</Link>
+          <Link to="/landing_page_real_estate_5#why-us">Why us</Link>
+          <Link to="/landing_page_real_estate_5/pricing">Pricing</Link>
+          <Link to="/landing_page_real_estate_5/blog">Blog</Link>
           <div className="flex">
             <button className="py-[18px] px-10 bg-[#CBB3FF] rounded-[50px] text-xl h-[54px] leading-none font-normal">
               Get Started
