@@ -5,16 +5,19 @@ const data = [
     img: "real_estate_5/blog_1.png",
     date: "Jan 12, 2022",
     descriptions: "Maximizing Your Rental Property's Potential",
+    tag: "Marketing",
   },
   {
     img: "real_estate_5/blog_2.png",
     date: "Apr 8, 2022",
     descriptions: "The Future of Real Estate Management",
+    tag: "Trends",
   },
   {
     img: "real_estate_5/blog_3.png",
     date: "Mar 15, 2022",
     descriptions: "Top Tips for Effective Tenant Management",
+    tag: "Trends",
   },
 ];
 
@@ -30,6 +33,7 @@ export const Blog = () => {
               img={item.img}
               descriptions={item.descriptions}
               date={item.date}
+              tag={item.tag}
             />
           ))}
         </div>

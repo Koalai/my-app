@@ -19,7 +19,7 @@ export const ToggleSwitch = () => {
       </span>
 
       <div
-        className="relative w-[58px] h-[26px] bg-gray-200 rounded-full cursor-pointer border-[2px] border-[#CBB3FF] flex items-center p-[2px]"
+        className="relative w-[58px] h-[26px] bg-white rounded-full cursor-pointer border-[2px] border-[#CBB3FF] flex items-center p-[2px]"
         onClick={handleToggle}
       >
         <motion.div
