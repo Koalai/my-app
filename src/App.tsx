@@ -12,9 +12,10 @@ import { Ecommerce_2_Cart } from "./pages/ecommerce_2/Ecommerce_2_Cart";
 import { RealEstate_3 } from "./pages/RealEstate_3";
 import { RealEstate_4 } from "./pages/RealEstate_4";
 import { Home } from "./pages/Home";
-import { Real_Estate_5 } from "./pages/real_estate_5/Real_Estate_5";
+import { RealEstate_5 } from "./pages/real_estate_5/RealEstate_5";
 import { PricingPage } from "./pages/real_estate_5/PricingPage";
 import { BlogPage } from "./pages/real_estate_5/BlogPage";
+import { RealEstate_6 } from "./pages/real_estate_6/RealEstate_6";
 
 function App() {
   return (
@@ -25,12 +26,13 @@ function App() {
         <Route path="/landing_page_real_estate_2" element={<RealEstate_2 />} />
         <Route path="/landing_page_real_estate_3" element={<RealEstate_3 />} />
         <Route path="/landing_page_real_estate_4" element={<RealEstate_4 />} />
-        <Route path="/landing_page_real_estate_5" element={<Real_Estate_5 />} />
+        <Route path="/landing_page_real_estate_5" element={<RealEstate_5 />} />
         <Route
           path="/landing_page_real_estate_5/pricing"
           element={<PricingPage />}
         />
         <Route path="/landing_page_real_estate_5/blog" element={<BlogPage />} />
+        <Route path="/landing_page_real_estate_6" element={<RealEstate_6 />} />
         <Route path="/landing_page_ecommerce" element={<Ecommerce />} />
         <Route path="/landing_page_ecommerce_2" element={<Ecommerce_2 />} />
         <Route
