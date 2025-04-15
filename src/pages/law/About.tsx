@@ -42,7 +42,7 @@ export const About = () => {
     };
   }, []);
   return (
-    <div className="font-[Manrope] relative">
+    <div className="font-[Manrope] relative pt-[120px]">
       <Navbar />
       <p className="py-20 px-12 text-[48px]">About Us</p>
       <div className="grid grid-cols-2">
@@ -67,7 +67,7 @@ export const About = () => {
         </div>
         <img src="/law/about_bg_2.png" alt="background" className="h-full" />
       </div>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 ">
         {aboutData.map((item, index) => (
           <div
             className="py-[120px] px-[48px] border-[1px] flex flex-col gap-5 items-center"

@@ -7,8 +7,8 @@ export const Navbar = () => {
       <div className="flex gap-10 ">
         <Link to="/landing_page_law">Home</Link>
         <Link to="/landing_page_law/about">About</Link>
-        <Link>Services</Link>
-        <Link>Contact</Link>
+        <Link to="/landing_page_law/services">Services</Link>
+        <Link to="/landing_page_law/contact">Contact</Link>
       </div>
       <button className="py-4 px-8 border-[1px]">Buy Template</button>
     </div>
