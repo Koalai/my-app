@@ -16,6 +16,7 @@ import { RealEstate_5 } from "./pages/real_estate_5/RealEstate_5";
 import { PricingPage } from "./pages/real_estate_5/PricingPage";
 import { BlogPage } from "./pages/real_estate_5/BlogPage";
 import { RealEstate_6 } from "./pages/real_estate_6/RealEstate_6";
+import { Law } from "./pages/law/Law";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         />
         <Route path="/landing_page_real_estate_5/blog" element={<BlogPage />} />
         <Route path="/landing_page_real_estate_6" element={<RealEstate_6 />} />
+        <Route path="/landing_page_law" element={<Law />} />
         <Route path="/landing_page_ecommerce" element={<Ecommerce />} />
         <Route path="/landing_page_ecommerce_2" element={<Ecommerce_2 />} />
         <Route
